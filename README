@@ -26,11 +26,11 @@ In ancient China, people leverage I Ching to name their kids.
 　　现在，算卦开始：
 　　1、把四十九颗棋子随机分成左右两组，象征着混沌初开，天与地一分为二。两组棋子，一组象征着天，一组象征着地。
 　　
-　　```
-　　CalculateHexagrams().group('Sky')
+　
+　　`Hexagrams().group('Sky')`
+
 　　
-　　CalculateHexagrams().group('Earth')
-　　```
+　　`Hexagrams().group('Earth')`
 　　
 　　2、从任意一组当中拿掉一颗棋子（通常会从象征地的右边一组里拿），这颗棋子象征的就是人。天、地、人，称“三才”。
 　　3、把象征天的那组棋子数数有多少颗，数清楚之后把这个数字除以4（4象征一年四季），看看余数是几。

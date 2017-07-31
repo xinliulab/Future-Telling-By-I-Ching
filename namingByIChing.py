@@ -4,7 +4,7 @@ import random
 import sys
 import numpy
 	
-class CalculateHexagrams():
+class Hexagrams():
 
 	def __init__(self):
 		self.numWeed = 49 # 取四十九根蓍草
