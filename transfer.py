@@ -22,25 +22,26 @@ class Transfer():
 				newArray.append(0)
 		return newArray
 
+	# 现在还需要在豫卦的基础上变出一个新卦，这就是谦卦。（遵循的原理：老变少不变）。
+	# 此时，豫卦为本卦，谦卦为变卦
 	def shaoTaiTransfer(self, array):
 		newArray = []
 		for i in range (len(array)):
 			if array[i] == 6:
-				newArray.append(8)
-			elif array[i] = 9:
-				newArray.append(7)
+				newArray.append(9)
+			elif array[i] == 9:
+				newArray.append(6)
 			else:
 				newArray.append(array[i])
-		return self.yinYangtransfer(array)
+		return self.yinYangTransfer(newArray)
 
-
-
-h = Hex().hexgram()
-b = Read().yinYangtransfer(h)
-b = Read().yinYangtransfer(h)
-print IC().text(b)
-print IC().text
-
+	# 有变卦也有变爻，原本豫卦里从下往上数的第三爻的数字是6，也就是少阴，变为阳爻；
+	# 第四爻的数字是9，是老阳，变为阴爻。
+	# 演算到这里，得出了变卦和变爻，终于完成了整个占卜
+	def yaoTransfer(self, array):
+		newArray = []
+		newArray = self.yinYangTransfer(array)
+		return newArray
 
 
 # Weed = Cal.weed(49)
