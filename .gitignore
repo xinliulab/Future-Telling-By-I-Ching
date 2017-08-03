@@ -1,0 +1,17 @@
+*.pyc
+*.o
+*.class
+/bin
+/out
+/target
+/build
+/.idea
+/_pycache_
+*.log
+*.lock
+*.tmp
+*.DS_Store
+Thumbs.db
+*.xml
+*.txt
+*.exe
