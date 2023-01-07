@@ -16,17 +16,17 @@ class Read():
 	def read(self):
 		index = 0
 		array = Hex().hexgram()
-		print array
+		print(array) 
 		oldHex = Tra().yinYangTransfer(array)
-		print oldHex
+		print(oldHex)
 		newHex = Tra().shaoTaiTransfer(array)
-		print newHex
+		print(newHex)
 
 		for i in range (len(newHex)):
 			if newHex[i] != oldHex[i]:
 				index = i + 1
 
-		print "第 ", index, " 爻"
-		print IC().text(oldHex)
+		print("第 ", index, " 爻")
+		print(IC().text(oldHex))
  
 Read().read()

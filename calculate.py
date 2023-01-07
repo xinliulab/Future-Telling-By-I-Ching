@@ -19,7 +19,7 @@ class Calculate():
 
 	def random(self, array):
 		for i in range (len(array)):
-			array[i].extend(random.sample(numpy.arange(0, 2, 1), 1))
+			array[i].extend(random.sample(list(numpy.arange(0, 2, 1)), 1))
 		return array
 
 	# 1.1: 两组蓍草，一组象征着天，一组象征着地
@@ -45,14 +45,14 @@ class Calculate():
 	# 1.4: 把象征地的那组棋子照猫画虎，和“3”的做法一致
 	def reduceElement(self, array, operation):
 		if operation == 1:
-			id = random.sample(numpy.arange(0, len(array), 1), 1)
+			id = random.sample(list(numpy.arange(0, len(array), 1)), 1)
 			array.pop(id[-1])
 			return array
 		elif operation == 0:
 			remains = len(array)%4
 			if remains == 0:
 				remains = 4
-			id = random.sample(numpy.arange(0, len(array), 1), remains)
+			id = random.sample(list(numpy.arange(0, len(array), 1)), remains)
 			id.sort()
 			for i in range (len(id)): 
 				array.pop(id[i]-i)
